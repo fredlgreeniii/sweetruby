@@ -1,19 +1,99 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <title>Sweet Ruby's</title>
-        </head>
-        <body>
-            <h1>Sweet Ruby's</h1>
-            This website will be to display cakes and take orders
-            <form action="submit">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Rubys</title>
+    <style>
+        body {
+            width: 90%;
+            height: 100%;
+            max-width: 1000px;
+            margin: auto;
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 20px;
             
-            Fill out this form
-            <br>Name <input type="name" placeholder="Your name here">
-            <br>Email <input type="email" placeholder="Your email here">
-            <br>Subject<input type="text" placeholder="Subject here">
-            <br> <button type="submit">Submit</button>
-            </form>
-        </body>
-    </html>
+        }
+
+        header {
+            grid-column: 1 / 13;
+            grid-row: 1;
+        }
+
+        content {
+            grid-column: 4 / 13;
+            grid-row: 2;
+        }
+
+        footer {
+            grid-column: 1 / 13;
+            grid-row: 3;
+        }
+
+        
+    
+
+        header,
+        footer {
+            border-radius: 50px;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid rgb(238, 91, 135);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sweet Rubys</h1>
+        <h2>We Got Bars</h2>
+        <h3>And Cakes Too</h3>
+    </div>
+    <br>
+    <div class="content">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Specials</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <br>
+        <main>
+            <p>Sweet Ruby's was founded to honor my late grandmother after her passing. Using recipes that have been handed down over three generations, Sweet Ruby's is known foe their custom cakes, cupcakes and dessert tables. Started in as home based business located in Nashville, Tennessee, Sweet Ruby's is currently looking to expand using shipping of select featured products.</p>
+        </main>
+        <br>
+        <form action="Submit Form">
+            <label>
+                <input type="radio" name="option-1-option-2-option-3"> Option 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="option-1-option-2-option-3"> Option 2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="option-1-option-2-option-3"> Option 3
+            </label>
+            <br>
+            <input type="text" placeholder="Place Order" required>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+<br>
+<footer>
+    <ul>
+        <li><a href="https://youtube.com">YouTube</a></li>
+        <li><a href="https://facebook.com">Facebook</a></li>
+    </ul>
+</footer>
+</body>
+</html>
+    

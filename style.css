@@ -1,3 +1,43 @@
 body{
-    
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 200px auto 100px;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+}
+
+a {
+    color: white;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type:none;
+}
+.header {
+    grid-area: header;
+    background-color: hotpink;
+    color: white;
+}
+
+.nav {
+
+}
+
+.main {
+    font-weight: bold;
+
+}
+
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+    color: violet;
 }
