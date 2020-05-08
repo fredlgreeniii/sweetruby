@@ -2,7 +2,7 @@ body{
     margin: 0;
     height: 100vh;
     display: grid;
-    grid-template-rows: 200px auto 100px;
+    grid-template-rows: 100px auto 100px;
     grid-template-columns: auto;
     grid-template-areas: 
     "header"
@@ -19,25 +19,30 @@ h3 {
 }
 
 ul {
-    list-style-type:none;
+    list-style-type: none;
 }
+
 .header {
     grid-area: header;
     background-color: hotpink;
     color: white;
 }
 
-.nav {
-
-}
-
-.main {
+.content {
+    grid-area: content;
     font-weight: bold;
+    background-color: thistle;
 
 }
 
 .footer {
     grid-area: footer;
-    background-color: yellow;
+    background-color: green;
     color: violet;
+}
+
+@media screen and (min-width: 375px) {
+    h1 {
+        text-align: center;
+    }
 }
