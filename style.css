@@ -2,47 +2,127 @@ body{
     margin: 0;
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 200px auto 100px;
     grid-template-columns: auto;
     grid-template-areas: 
     "header"
     "content"
     "footer";
+    font-family: 'Leckerli One', cursive;
 }
 
 a {
     color: white;
 }
 
-h3 {
-    font-weight: normal;
-}
-
 ul {
     list-style-type: none;
 }
 
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
 .header {
     grid-area: header;
-    background-color: hotpink;
-    color: white;
+    background-color: white;
+    color: hotpink;
+}
+
+.img-Sweet-Rubys-Logo-wrapper {
+    height: 140px;
+    width: 140px;
+    padding: 0px;
+    border: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.img-Sweet-Rubys-Logo {
+    width: 100%
+
 }
 
 .content {
+    padding: 20px;
     grid-area: content;
-    font-weight: bold;
-    background-color: thistle;
+    background-color: pink;
 
 }
+
+/*  This can be removed may not work wit this font  */
+
 
 .footer {
     grid-area: footer;
-    background-color: green;
-    color: violet;
+    background-color: firebrick;
 }
 
-@media screen and (min-width: 375px) {
-    h1 {
-        text-align: center;
-    }
+/*  This is for medium sized screens  */
+
+@media screen and (min-width:768px) {
+    
+.header {
+    height: 300px;
+   
+}
+
+h1 {
+        font-size: 70px;
+
+}
+
+.img-Sweet-Rubys-Logo-wrapper {
+    height: 140px;
+    width: 200px;
+    padding: 0px;
+    border: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+
+
+.content {
+    height: 550px;
+    border: 10px;
+    border-color:#795548;
+    margin-top: 110px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-size: 18px
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+
+    
+}
+}
+/*  This is for medium sized screens  */
+
+@media screen and (min-width:1024px) {
+
+.content {
+    height: 598px;
+    font-size: 21px;
+
+}
+
+
+
+.footer {
+    height: 140px;
+    font-size: 20px
+}
+
 }

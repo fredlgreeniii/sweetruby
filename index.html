@@ -4,40 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href= "/Users/fredgreen/Desktop/pivottech-project/web-layout/sweetruby/style.css" rel ="stylesheet" type = "text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href= "style.css" rel ="stylesheet" type = "text/css">
+
     <title>Sweet Rubys</title>
    
 </head>
 <body>
     <div class="header">
         <h1>Sweet Rubys</h1>
+        <div class=img-Sweet-Rubys-Logo-wrapper><img class="img-Sweet-Rubys-Logo" src="SweetRubysLogo.jpg" alt="Sweet Rubys Logo"></div>
     </div>
     <br>
     <div class="content">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Specials</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <section class="navi">
+            <nav>
+                <ul>
+                    <li><h3>Home</h3></li>
+                    <li><h3>About</h3></li>
+                    <li><h3>Specials</h3></li>
+                    <li><h3>Contact</h3></li>
+                </ul>
+            </nav>
+        </section>    
         <br>
+        <section class="main">
         <main>
-            <p>Sweet Ruby's was founded to honor my late grandmother after her passing. Using recipes that have been handed down over three generations, Sweet Ruby's is known foe their custom cakes, cupcakes and dessert tables. Started in as home based business located in Nashville, Tennessee, Sweet Ruby's is currently looking to expand using shipping of select featured products.</p>
+            <p><span>Sweet Ruby's was founded to honor my late grandmother after her passing. Using recipes that have been handed down over three generations, Sweet Ruby's is known for their custom cakes, cupcakes and dessert tables. Started in as home based business located in Nashville, Tennessee, Sweet Ruby's is currently looking to expand using shipping of select featured products.</span></p>
         </main>
+        </section>
         <br>
         <form action="Submit Form">
             <label>
-                <input type="radio" name="option-1-option-2-option-3"> Option 1
+                <input type="radio" name="option-1-option-2-option-3"><span> Option 1 </span>
             </label>
             <br>
             <label>
-                <input type="radio" name="option-1-option-2-option-3"> Option 2
+                <input type="radio" name="option-1-option-2-option-3"><span> Option 2 </span>
             </label>
             <br>
             <label>
-                <input type="radio" name="option-1-option-2-option-3"> Option 3
+                <input type="radio" name="option-1-option-2-option-3"><span> Option 3 </span>
             </label>
             <br>
             <input type="text" placeholder="Place Order" required>
